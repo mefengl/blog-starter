@@ -14,6 +14,9 @@ importers:
       '@tanstack/react-router':
         specifier: ^1.46.0
         version: 1.46.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      bamboo.css:
+        specifier: ^1.4.0
+        version: 1.4.0
       class-variance-authority:
         specifier: ^0.7.0
         version: 0.7.0
@@ -915,6 +918,9 @@ packages:
 
   balanced-match@1.0.2:
     resolution: {integrity: sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw==}
+
+  bamboo.css@1.4.0:
+    resolution: {integrity: sha512-6jiEzRZ0n1GfbLuw2Tf37cJd+lcYjFxl43VH78+sixMnKFG3YorlvC95kddqYtWeMK6zmBV4PrPEkwVf4vXwgw==}
 
   binary-extensions@2.3.0:
     resolution: {integrity: sha512-Ceh+7ox5qe7LJuLHoY0feh3pHuUDHAcRUeyL2VYghZwfpkNIy/+8Ocg0a3UuSoYzavmylwuLWQOf3hl0jjMMIw==}
@@ -3494,6 +3500,8 @@ snapshots:
   bail@2.0.2: {}
 
   balanced-match@1.0.2: {}
+
+  bamboo.css@1.4.0: {}
 
   binary-extensions@2.3.0: {}
 
