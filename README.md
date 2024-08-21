@@ -1,6 +1,12 @@
 # Blog Starter
 
-Working on it...
+## Addons
+
+- md-router: [md-router](./plugins/md-router.ts)
+
+> A self-made vite plugin for automatically generating tsx files to export markdown files to tanstack/router.
+
+To be continue...
 
 # React Starter
 
