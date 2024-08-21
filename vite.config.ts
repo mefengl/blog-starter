@@ -3,13 +3,18 @@ import react from '@vitejs/plugin-react'
 import path from 'node:path'
 import { defineConfig } from 'vite'
 import mdx from '@mdx-js/rollup'
+import remarkGfm from 'remark-gfm'
 
 import mdRouterPlugin from './plugins/md-router'
 
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
-    { enforce: 'pre', ...mdx({/* jsxImportSource: …, otherOptions… */}) },
+    { enforce: 'pre', ...mdx({
+      remarkPlugins: [
+        remarkGfm,
+      ],
+    }) },
     mdRouterPlugin({ directory: 'src/routes' }),
     TanStackRouterVite(),
     react(),
