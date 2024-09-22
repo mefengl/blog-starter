@@ -1,14 +1,15 @@
 import antfu from '@antfu/eslint-config'
 import { FlatCompat } from '@eslint/eslintrc'
-import perfectionistNatural from 'eslint-plugin-perfectionist/configs/recommended-natural'
+import perfectionist from 'eslint-plugin-perfectionist'
 
 const compat = new FlatCompat()
 
 export default antfu(
+  // perfectionist
   {
-    perfectionistNatural,
     rules: {
       'import/order': 'off',
+      ...perfectionist.configs['recommended-natural'].rules,
     },
   },
 
