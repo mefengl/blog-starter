@@ -1,6 +1,7 @@
+import type { Plugin } from 'vite'
+
 import fs from 'node:fs'
 import path from 'node:path'
-import type { Plugin } from 'vite'
 
 const pluginName = 'md-router'
 
@@ -50,7 +51,6 @@ export const Route = createFileRoute('/${path.basename(file, path.extname(file))
   }
 
   return {
-    name: pluginName,
     buildStart() {
       const directoryToScan = options.directory || path.resolve(__dirname, '../src')
       scanDirectory(directoryToScan)
@@ -83,5 +83,6 @@ export const Route = createFileRoute('/${path.basename(file, path.extname(file))
         }
       })
     },
+    name: pluginName,
   }
 }

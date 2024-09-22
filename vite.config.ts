@@ -1,9 +1,9 @@
+import mdx from '@mdx-js/rollup'
 import { TanStackRouterVite } from '@tanstack/router-plugin/vite'
 import react from '@vitejs/plugin-react'
 import path from 'node:path'
-import { defineConfig } from 'vite'
-import mdx from '@mdx-js/rollup'
 import remarkGfm from 'remark-gfm'
+import { defineConfig } from 'vite'
 
 import mdRouterPlugin from './plugins/md-router'
 

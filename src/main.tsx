@@ -1,7 +1,7 @@
-import { RouterProvider, createRouter } from '@tanstack/react-router'
+import { createRouter, RouterProvider } from '@tanstack/react-router'
+import 'bamboo.css'
 import { StrictMode } from 'react'
 import ReactDOM from 'react-dom/client'
-import 'bamboo.css'
 
 // Import the generated route tree
 import { routeTree } from './routeTree.gen'
